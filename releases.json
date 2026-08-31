@@ -1,0 +1,99 @@
+{
+  "releases": [
+    {
+      "version": "3.4.0",
+      "date": "2026-08-20",
+      "summary": "Clearance Check refinements & Revit 2027 readiness",
+      "changes": [
+        {
+          "type": "new",
+          "title": "Per-door-instance exclusion checkbox in Clearance Check, so individual doors can be skipped without changing category-wide settings",
+          "description": "Each door instance now exposes an \"Exclude from Clearance Check\" parameter. Excluded doors keep their clearance families but are ignored by the validation run.",
+          "media": [
+            {
+              "type": "image",
+              "url": "assets/3.4.0/per-door-exclusion.svg",
+              "caption": "The new exclusion checkbox on a door instance."
+            }
+          ]
+        },
+        {
+          "type": "new",
+          "title": "By-view visibility control for clearance family instances",
+          "description": "Clearance geometry can be shown or hidden per view without deleting the instances."
+        },
+        {
+          "type": "improved",
+          "title": "Category scoping now runs before the Clearance Check tool executes, cutting down on manual pre-filtering",
+          "description": "Pick the categories once and the tool limits the element collection up front, which noticeably shortens run time on large models."
+        },
+        {
+          "type": "improved",
+          "title": "Conditional schedule formatting flags clearance issues directly in Revit schedules",
+          "description": "Failing rows are highlighted so issues can be reviewed without leaving the schedule view.",
+          "media": [
+            {
+              "type": "image",
+              "url": "assets/3.4.0/schedule-formatting.svg",
+              "caption": "Failing clearance rows highlighted in a Revit schedule."
+            }
+          ]
+        },
+        {
+          "type": "fix",
+          "title": "Fixed an \"Unrecoverable Error\" crash caused by the Sheet Utilities component being compiled against a different Revit patch level",
+          "description": "The component is now built against the baseline API surface shared by all supported patch levels."
+        },
+        {
+          "type": "fix",
+          "title": "Resolved an ILRepack runtime exception affecting Microsoft.Data.Sqlite on .NET Framework 4.8 builds",
+          "description": "Native SQLite dependencies are no longer merged into the main assembly and are deployed alongside it instead."
+        },
+        {
+          "type": "other",
+          "title": "Migrated deprecated Curve.Intersect calls to the Revit 2027-compatible CurveIntersectResult API ahead of the 2027 release",
+          "description": "No behavioural change for existing users; the migration keeps the add-in compiling cleanly against Revit 2027."
+        }
+      ]
+    },
+    {
+      "version": "3.3.0",
+      "date": "2026-06-10",
+      "summary": "Sheet Utilities rewrite & faster model audits",
+      "changes": [
+        {
+          "type": "new",
+          "title": "Batch sheet renaming with reusable naming rules",
+          "description": "Naming rules can be saved per project and re-applied to newly created sheets."
+        },
+        {
+          "type": "improved",
+          "title": "Model audit results are now streamed to the UI as they are produced",
+          "description": "Long audits report progress instead of blocking until completion."
+        },
+        {
+          "type": "fix",
+          "title": "Fixed shared parameter binding being dropped when a project template was upgraded",
+          "description": "Bindings are re-applied after the upgrade and verified before the transaction is committed."
+        }
+      ]
+    },
+    {
+      "version": "3.2.0",
+      "date": "2026-04-02",
+      "summary": "Clearance Check general availability",
+      "changes": [
+        {
+          "type": "new",
+          "title": "Clearance Check tool for doors and equipment",
+          "description": "Places parametric clearance families and validates them against surrounding geometry."
+        },
+        {
+          "type": "other",
+          "title": "Minimum supported Revit version raised to 2022",
+          "description": "Revit 2021 builds are no longer published."
+        }
+      ]
+    }
+  ]
+}
