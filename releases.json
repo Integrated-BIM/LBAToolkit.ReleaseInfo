@@ -41,7 +41,7 @@
       "changes": [
         {
           "type": "fix",
-          "title": "Fix: Sheet Tools Turning Off Unexpectedly",
+          "title": "Fixed Sheet Tools Turning Off Unexpectedly",
           "description": "Resolved an issue that caused the Sheet Tools to become disabled after running for a period of time."
         }
       ]
