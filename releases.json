@@ -1,6 +1,38 @@
 {
   "releases": [
     {
+      "version": "1.3.0",
+      "date": "2026-09-08",
+      "summary": "Added version information and update controls, improved update management, and introduced BETA labels for tools under development.",
+      "changes": [
+        {
+          "type": "new",
+          "title": "Version Information",
+          "description": "Added an Info button to the About panel in the IBIM tab, allowing users to view the installed version and the changes introduced in the latest version."
+        },
+        {
+          "type": "new",
+          "title": "Manual Update Check",
+          "description": "Added a Check Update button to the About panel in the IBIM tab, allowing users with a valid license to manually check for available updates."
+        },
+        {
+          "type": "new",
+          "title": "New Version Notification",
+          "description": "The Check Update button now changes to notify the user when a new version is available."
+        },
+        {
+          "type": "improved",
+          "title": "Automatic Update Installation",
+          "description": "The update mechanism has been enhanced to automatically download the MSI package when a new version is available and launch the installation process afterward."
+        },
+        {
+          "type": "improved",
+          "title": "BETA Labels",
+          "description": "Added a BETA label to the title bars of the Clearance Check and Fire Rating Check windows to indicate that these tools are still under development."
+        }
+      ]
+    },
+    {
       "version": "1.0.1",
       "date": "2026-08-21",
       "summary": "Fixes for Revit 2027 add-in deployment and the SheetMatrix tolerance issue.",
