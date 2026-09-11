@@ -1,5 +1,17 @@
 {
   "releases": [
+     {
+      "version": "1.4.0",
+      "date": "2026-09-11",
+      "summary": "Improved Auto Elevation worksharing support.",
+      "changes": [
+        {
+          "type": "improved",
+          "title": "Worksharing Synchronization and Relinquish",
+          "description": "Added a toggle button to the Auto Elevation window that synchronizes the workshared model and relinquishes element ownership when the tool session ends."
+        }
+      ]
+    },
     {
       "version": "1.3.0",
       "date": "2026-09-08",
