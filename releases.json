@@ -1,5 +1,17 @@
 {
   "releases": [
+    {
+      "version": "1.5.0",
+      "date": "2026-09-15",
+      "summary": "Schedule update reminders.",
+      "changes": [
+        {
+          "type": "improved",
+          "title": "Clashed Doors Schedule Reminder",
+          "description": "Added an Ignore option to the clashed doors schedule update reminder, allowing users to stop the reminder from appearing again for the remainder of the current Revit session."
+        }
+      ]
+     },
      {
       "version": "1.4.0",
       "date": "2026-09-11",
