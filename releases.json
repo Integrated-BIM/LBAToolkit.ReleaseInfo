@@ -1,6 +1,33 @@
 {
   "releases": [
     {
+      "version": "1.6.0",
+      "date": "2026-09-25",
+      "summary": "Added a new Management Tool for controlling tool availability, improved clearance checking with progress and cancellation support, and enhanced BETA indicators and update dialogs.",
+      "changes": [
+        {
+          "type": "new",
+          "title": "Management Tool",
+          "description": "Added a new Management Tool that allows users to manage the availability of individual tools within the toolkit by enabling or disabling them."
+        },
+        {
+          "type": "improved",
+          "title": "Clearance Check Progress",
+          "description": "Added a progress bar while checking doors for clearance clashes, with the option to cancel the operation at any time."
+        },
+        {
+          "type": "improved",
+          "title": "BETA Tool Icons",
+          "description": "Updated the icons of tools under development to include a BETA label, making them easier to identify."
+        },
+        {
+          "type": "improved",
+          "title": "Update Cancellation",
+          "description": "Updated the Revit close dialog shown during the update process by renaming the Close button to Cancel Update to better clarify its action."
+        }
+      ]
+    },
+    {
       "version": "1.5.0",
       "date": "2026-09-15",
       "summary": "Schedule update reminders.",
