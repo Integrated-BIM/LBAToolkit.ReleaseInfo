@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.6.1",
+      "date": "2026-10-02",
+      "summary": "Fixed a visual issue affecting the display of ribbon panel title backgrounds.",
+      "changes": [
+        {
+          "type": "fix",
+          "title": "Ribbon Panel Title Backgrounds",
+          "description": "Fixed an issue where the background colors of ribbon panel titles were not displayed correctly."
+        }
+      ]
+    },
+    {
       "version": "1.6.0",
       "date": "2026-09-25",
       "summary": "Added a new Management Tool for controlling tool availability, improved clearance checking with progress and cancellation support, and enhanced BETA indicators and update dialogs.",
