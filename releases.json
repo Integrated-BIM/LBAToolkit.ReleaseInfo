@@ -2,6 +2,28 @@
   "releases": [
     {
       "version": "1.6.1",
+      "date": "2026-10-09",
+      "summary": "Fixed an issue causing unnecessarily small view scales in Room Criteria, and enhanced Clearance Check with improved clash detection and visibility of doors without defined clearances.",
+      "changes": [
+        {
+          "type": "fix",
+          "title": "Room Criteria View Scaling",
+          "description": "Fixed an issue in the Room Criteria tool that caused generated views to have unnecessarily small scales."
+        },
+        {
+          "type": "improved",
+          "title": "Clearance Check Clash Detection",
+          "description": "Improved clearance clash detection to ignore walls and columns interfering with door clearances by less than 8 inches, reducing unnecessary clash reports."
+        },
+        {
+          "type": "improved",
+          "title": "Doors Without Defined Clearances",
+          "description": "Enhanced the Clearance Check results window to display doors that do not have clearance information defined in their families or types, making them easier to identify and review."
+        }
+      ]
+    },
+    {
+      "version": "1.6.1",
       "date": "2026-10-02",
       "summary": "Fixed a visual issue affecting the display of ribbon panel title backgrounds.",
       "changes": [
@@ -50,8 +72,8 @@
           "description": "Added an Ignore option to the clashed doors schedule update reminder, allowing users to stop the reminder from appearing again for the remainder of the current Revit session."
         }
       ]
-     },
-     {
+    },
+    {
       "version": "1.4.0",
       "date": "2026-09-11",
       "summary": "Improved Auto Elevation worksharing support.",
